@@ -34,11 +34,18 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
+    
     public void testApp()
     {
     	Calcul c=new Calcul();
-    	double res1=c.addition(30, 10);
-    	double rest2=c.multiplication(5, 8);
-       assertTrue("verifie",res1==rest2);
+    	assertEquals(100,c.multiplication(10, 10));
+    	int res1=c.addition(10, 10);
+    	int res2=c.multiplication(10, 2);
+    	//assertEquals(40,c.addition(30, 10));
+    	//assertEquals(40,c.addition(30, 10));
+    	assertTrue("verifie",res1==res2);
+    	
+    	
+    
     }
 }
