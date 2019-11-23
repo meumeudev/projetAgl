@@ -24,7 +24,7 @@ public class AppTest
 	@Before
 public void setup()
 {
-		Calcul c=new Calcul();
+		 c=new Calcul();
 }
     public AppTest( String testName )
     {
