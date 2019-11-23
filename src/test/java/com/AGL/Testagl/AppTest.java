@@ -1,5 +1,7 @@
 package com.AGL.Testagl;
 
+import org.junit.Before;
+
 import junit.framework.Test;
 import service.impl.Calcul;
 
@@ -18,6 +20,12 @@ public class AppTest
      *
      * @param testName name of the test case
      */
+	private Calcul c;
+	@Before
+public void setup()
+{
+		Calcul c=new Calcul();
+}
     public AppTest( String testName )
     {
         super( testName );
@@ -34,10 +42,10 @@ public class AppTest
     /**
      * Rigourous Test :-)
      */
-    
+    @org.junit.Test
     public void testApp()
     {
-    	Calcul c=new Calcul();
+    	
     	assertEquals(100,c.multiplication(10, 10));
     	int res1=c.addition(10, 10);
     	int res2=c.multiplication(10, 2);
