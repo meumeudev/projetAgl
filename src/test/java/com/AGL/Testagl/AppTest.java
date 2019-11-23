@@ -42,7 +42,7 @@ public void setup()
     /**
      * Rigourous Test :-)
      */
-    @org.junit.Test
+    
     public void testApp()
     {
     	
